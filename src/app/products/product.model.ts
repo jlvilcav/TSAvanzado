@@ -15,3 +15,5 @@ export interface Product extends baseModel {
   isNew: boolean;
   tags: string[];
 }
+
+

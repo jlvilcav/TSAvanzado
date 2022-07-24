@@ -1,5 +1,5 @@
 import { Product} from './product.model';
-import { CreateProductDto, UpdateProductDto } from './product.dto';
+import { CreateProductDto, UpdateProductDto, FindProductDto } from './product.dto';
 import { faker } from '@faker-js/faker';
 
 export const products: Product[] = [];
@@ -33,10 +33,10 @@ export const updateProduct = (id: string, changes: UpdateProductDto): Product =>
   return products[index];
 }
 
-export const getProduct = (id: string) => {
-  // data.id = products.length + 1;
-  // data.createdAt = new Date(1988,1,1);
-  // products.push(data);
+export const findProduct = (dto: FindProductDto): Product[] => {
+  //code
+  // dto.color = 'red'; //Son campos de lectura
+  return products;
 }
 
 export const deleteProduct = (id: string) => {

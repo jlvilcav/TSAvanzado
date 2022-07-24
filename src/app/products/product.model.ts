@@ -5,7 +5,13 @@ export type Sizes = 'S' | 'M' | 'L' | 'XL'; //lotral type
 
 export interface Product extends baseModel {
   title: string;
+  image: string;
+  description: string;
   stock: number;
   sizes?: Sizes;
+  color: string;
+  price: number;
   category: Category;
+  isNew: boolean;
+  tags: string[];
 }

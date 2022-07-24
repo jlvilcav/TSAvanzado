@@ -36,6 +36,10 @@ export const updateProduct = (id: Product['id'], changes: UpdateProductDto): Pro
 export const findProduct = (dto: FindProductDto): Product[] => {
   //code
   // dto.color = 'red'; //Son campos de lectura
+  // dto.tags = ['tag1', 'tag2']; //Son campos de lectura
+  // dto.tags?.push(); //Son campos de lectura
+  // dto.tags?.pop(); //Son campos de lectura
+  // dto.tags = []; //Son campos de lectura
   return products;
 }
 
